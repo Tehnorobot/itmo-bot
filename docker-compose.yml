@@ -1,0 +1,12 @@
+version: "3.8"
+
+services:
+  fastapi-service:
+    build: .
+    image: tehnorobot/itmobot:latest
+    container_name: fastapi-itmo-bot
+    ports:
+      - "8080:8080"
+    restart: unless-stopped
+    environment:
+      - TZ=UTC
