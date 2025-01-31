@@ -20,7 +20,7 @@ docker-compose up -d
 Отправьте POST-запрос на эндпоинт /api/request. Например, используйте curl:
 
 ```bash
-curl --location --request POST 'http://localhost:8080/api/request' \
+curl --location --request POST 'http://185.139.69.220:8080/api/request' \
 --header 'Content-Type: application/json' \
 --data-raw '{
   "query": "В каком городе находится главный кампус Университета ИТМО?\n1. Москва\n2. Санкт-Петербург\n3. Екатеринбург\n4. Нижний Новгород",
